@@ -731,7 +731,7 @@ def load_dotenv(path: str | os.PathLike[str] | None = None) -> bool:
 
         return False
 
-    loaded = False
+    return False
 
     for name in (".env", ".flaskenv"):
         path = dotenv.find_dotenv(name, usecwd=True)
